@@ -12,7 +12,7 @@ class Welcome extends CI_Controller {
 	 * 		http://example.com/index.php/welcome/index
 	 *	- or -
 	 * Since this controller is set as the default controller in
-	 * config/routes.php, it's displayed at http://example.com/
+	 * config/routes.php, it's displayed at http://example.com/git
 	 *
 	 * So any other public methods not prefixed with an underscore will
 	 * map to /index.php/welcome/<method_name>
@@ -20,6 +20,17 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		$this->load->view('hello_word');
 	}
-}
+
+	public function halo()
+	{
+		//$data['nama_web'] = "<br> <h1>Halo, saya sedang belajar CI-3</h1>";
+		$data=array(
+			'judul'=> "<h1>Belajar CI-3</h1>",
+			'Desk'=> "parsing Data Array"
+		);
+		$this->load->view('view_belajar', $data);
+	}
+
+}	
