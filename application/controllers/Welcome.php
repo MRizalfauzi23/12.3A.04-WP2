@@ -20,17 +20,17 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('hello_word');
+		$this->load->view('view-data-matakuliah');
 	}
 
 	public function halo()
 	{
-		//$data['nama_web'] = "<br> <h1>Halo, saya sedang belajar CI-3</h1>";
+		//$data['nama_web'] = "Parsing Data Array</h1>";
 		$data=array(
 			'judul'=> "<h1>Belajar CI-3</h1>",
 			'Desk'=> "parsing Data Array"
 		);
-		$this->load->view('view_belajar', $data);
+		$this->load->view('view-data-matakuliah', $data);
 	}
 
 }	
