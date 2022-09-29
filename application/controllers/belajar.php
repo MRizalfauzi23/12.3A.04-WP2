@@ -3,12 +3,17 @@
 class belajar extends CI_Controller
 {
     public function index(){
-        $this->load->view('view_belajar');
+        $this->load->view('welcome_message');
     }
 
-    public function bio()
+    public function parsing()
     {
-        $this->load->view('view_belajar');
+       //$data['bio']="Nama Saya Rizal";
+       $data=array(
+            'nama'=>"M Rizal Fauzi",
+            'pekerjaan'=> "Mahasiswa"
+       );
+        $this->load->view('view_belajar', $data);
     }
 }
 

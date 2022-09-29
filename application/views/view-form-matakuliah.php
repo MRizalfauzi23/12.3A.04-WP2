@@ -17,7 +17,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <th>kode MTK</th>
+                    <th>Kode MTK</th>
                     <th>:</th>
                     <td>
                          <input type="text" name="kode" id="kode">
@@ -25,14 +25,14 @@
                 </tr>
                 <tr>
                     <th>Nama MTK</th>
-                    <td>:</td>
+                    <th>:</th>
                     <td>
-                        <input type="text" name="Nama" id="Nama">
+                         <input type="text" name="Nama" id="Nama">
                     </td>  
                 </tr>
                 <tr>
                     <th>SKS</th>
-                    <td>:</td>
+                    <th>:</th>
                     <td>
                         <select name="sks" id="sks">
                              <option value="">pilih SKS</option>

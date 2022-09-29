@@ -1,10 +1,15 @@
 <html>
+
+<head>
+    <title>Tampil Data Matakuliah</title>
+</head>
+
 <body>
     <center>
         <table>
             <tr>
-                <th coslpan="3">
-                    tampil data matakuliah
+                <th colspan="3">
+                    Tampil Data Matakuliah
                 </th>
             </tr>
                 <tr>
@@ -13,7 +18,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <th>kode MTK</th>
+                    <th>Kode MTK</th>
                     <th>:</th>
                     <td>
                         <?= $kode; ?>
@@ -33,10 +38,12 @@
                         <?= $sks; ?>
                     </td>
                 </tr>
-                <td colspan="3" align="center">
-                    <a herf="<?= base_url('Matakuliah'); ?>">Kembali</a>
-                </td>
-            </tr>
+                <tr>
+                    <td colspan="3" align="center">
+                    <a href="<?= base_url('matakuliah');
+                    ?>">Kembali</a>
+                    </td>
+                </tr>
         </table>
     </center>
 </body>
